@@ -12,6 +12,7 @@ a {
 }
 body {
     font-family: 'Assistant', sans-serif;
+    font-size: 16px;
     color: #353231;
 }
 .container {
@@ -34,22 +35,296 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        height: 100vh;
     }
     &__top {
-        margin-top: 93px;
-        margin-bottom: 145px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    &__logo {}
+    &__logo-img {
+        width: 100px;
+        height: 50px;
+    }
     &__navigation {}
     &__menu {
         display: flex;
+        padding: 0;
+        list-style: none;
     }
-    &__menu-item {}
-    &__menu-link {}
+    &__menu-item + &__menu-item{
+        margin-left: 50px;
+    }
+    &__menu-link {
+        font-size: 20px;
+    }
     &__h1 {
-        margin-bottom: 26px;
+        margin-bottom: 10%;
+        font-size: 64px;
+        line-height: 78px;
+        text-align: center;
+    }
+
+    &__text {        
+        margin-bottom: 50%;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+}
+
+// #######ABOUT###########
+.about {
+    .container {
+    }
+    &__inner {
+        margin: 0 166px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__h3 {
+        width: 100%;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+        margin-top: 100px;
+        margin-bottom: 80px;
     }
     &__text {
-        margin-bottom: 370px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 115px;
+    }
+}
+
+// #######SKILLS###########
+.skills {
+    .container {
+        background-color: #FFFAF2;
+    }
+    &__inner {
+        margin: 0 166px;
+        display: flex;
+        flex-direction: column;     
+        justify-content: center;
+        align-items: center;
+    }
+    &__h3 {        
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+    }
+    &__bottom {
+        width: 100%;
+        display: flex;          
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 145px;  
+    }
+    &__left {  
+    }
+    &__img {
+        max-width: 350px;
+        height: auto;
+    }
+    &__right {        
+    }
+    &__table-left {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        height: 40px;
+        width: 200px;
+    }
+    &__table {
+        border-spacing: 0 20px;
+    }
+    &__table-right {
+        width: 400px;
+    }   
+    &__table-right--graph-html,
+    &__table-right--graph-wordpress {
+        background: #F5D6AB;
+        position: relative;
+    }
+    &__table-right--graph-html::after {
+        content: "";
+        background: #C66C49;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 100%;
+    }
+    &__table-right--graph-wordpress::after {
+        content: "";
+        background: #C66C49;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+// #######PORTFOLIO###########
+.portfolio {
+    &__inner {
+        margin: 0 166px;
+        display: flex;
+        flex-direction: column;     
+        justify-content: center;
+        align-items: center;
+    }
+    &__h3 {
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__right {
+        width: 50%;
+        height: 400px;
+        margin-bottom: 145px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;        
+        width: 50%;
+    }
+    &__work {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+}
+
+// #######FOOTER###########
+.footer {
+    .container {
+        background-color: #FFFAF2;
+    }
+    &__inner {
+        margin: 0 166px;        
+        display: flex;
+        flex-direction: column;     
+        justify-content: center;
+        align-items: center;        
+    }    
+    &__h3 {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+    }
+    &__bottom{
+        width: 100%;
+        display: flex;            
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__socials {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__facebook {}
+    &__img {}
+    &__linkedin {}
+    &__github {}
+    &__contacts {}
+    &__email {
+        color: #000;
+        font-weight: 600;
+    }
+    &__phone {
+        color: #000;
+        margin-left: 50px;
+        font-weight: 600;
+    }
+}
+
+// #######################################################
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+
+// #######MEDIA###########
+
+@media (max-width: 992px) {
+    .header {
+        &__inner {
+            margin: 0 20px;            
+        }
+        &__top {            
+            justify-content: center;
+        }
+        &__logo-img {
+            display: none;
+        }
+        &__menu-item + &__menu-item{
+            margin-left: 20px;
+        }
+        &__menu-link {
+            font-size: 16px;
+        }
+    }
+    .skills {       
+        &__bottom {              
+            flex-direction: column;        
+            justify-content: center;            
+            margin-bottom: 20px;  
+        }        
     }
 }

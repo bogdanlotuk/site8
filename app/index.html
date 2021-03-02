@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LB</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container" style="background-image: url('images/header__bg.png')">
+        <div class="container" style="background-image: url('img/header__bg.webp')">
             <div class="header__inner">
                 <div class="header__top">
-                    <img class="header__logo" src="#" alt="" >
+                    <a class="header__logo-link" href="#"><img class="header__logo-img" src="/img/logo.webp" alt="" ></a>
                     <nav class="header__navigation">
                         <ul class="header__menu">
                             <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
@@ -25,8 +26,8 @@
                         </ul>
                     </nav>
                 </div>
-                <h1 class="header__h1">Hi, It’s Théophile Seyrig</h1>
-                <p class="header__text">Designer from Porto, Portugal</p>
+                <h1 class="header__h1">Latkovskyi Bohdan</h1>
+                <p class="header__text">Wordpress developer</p>
             </div>
         </div>
     </header>
@@ -50,11 +51,30 @@
     <section class="skills">
         <div class="container">
             <div class="skills__inner">
-                <div class="skills__left">
-                    <img src="" alt="" class="skills__img">
-                </div>
-                <div class="skills__right">
-
+                <h3 class="skills__h3">Skills</h3>
+                <div class="skills__bottom">
+                    <div class="skills__left">
+                        <img class="skills__img" src="/img/Sponge.png" alt="">
+                    </div>
+                    <div class="skills__right">
+                        <table class="skills__table">
+                            <tr class="skills__table-row">
+                                <td class="skills__table-left">Profile</td><td class="skills__table-right">UI / Wordpress developer, HTML coder</td>
+                            </tr>                            
+                            <tr class="skills__table-row">
+                                <td class="skills__table-left">HTML5, CSS3</td><td class="skills__table-right skills__table-right--graph-html"></td>
+                            </tr>
+                            <tr class="skills__table-row">
+                                <td class="skills__table-left">Tools</td><td class="skills__table-right">SCSS, gulp, GIT</td>
+                            </tr>
+                            <tr class="skills__table-row">
+                                <td class="skills__table-left">Wordpress</td><td class="skills__table-right skills__table-right--graph-wordpress"></td>
+                            </tr>
+                            <tr class="skills__table-row">
+                                <td class="skills__table-left">Tools</td><td class="skills__table-right">jquery, Elementor</td>
+                            </tr>  
+                        </table>          
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,14 +84,32 @@
         <div class="container">
             <div class="portfolio__inner">
                 <h3 class="portfolio__h3">Portfolio</h3>
-                <div class="portfolio__left">
-                    <p class="portfolio__work">UX Research</p>
-                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.
-                    </p>
-                </div>
-                <div class="portfolio__right">
-                    <!-- SlIDER  -->
+                <div class="portfolio__bottom">
+                    <div class="portfolio__left">
+                        <p class="portfolio__work">UX Research</p>
+                        <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.
+                        </p>
+                    </div>
+                    <div class="portfolio__right">  
+                        <div class="zoom-gallery">
+                            <!--
+                        
+                            Width/height ratio of thumbnail and the main image must match to avoid glitches.
+                        
+                            If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable.
+                        
+                             -->
+                            <a href="http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg" data-source="http://500px.com/photo/32736307" title="Into The Blue" style="width:193px;height:125px;">
+                                <img src="http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg" width="193" height="125">
+                            </a>
+                            <a href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg" data-source="http://500px.com/photo/32554131" title="Light Sabre" style="width:82px;height:125px;">
+                                <img src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg" width="82px" height="125">
+                            </a>
+                        </div>
+                        
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,21 +118,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <h3 class="footer__h3"></h3>
-                <div class="footer__socials">
-                    <a class="footer__facebook" href=""><img class="footer__img" src="" alt=""></a>
-                    <a class="footer__linkedin" href=""><img class="footer__img" src="" alt=""></a>
-                    <a class="footer__github" href=""><img class="footer__img" src="" alt=""></a>
-                </div>
-                <div class="footer__contacts">
-                    <a class="footer__email" href="mailto:bogdanlotuk@gmail.com">Email</a>
-                    <a class="footer__phone" href="tel:+380678457859">Telephone</a>
+                <h3 class="footer__h3">Get in Touch</h3>
+                <div class="footer__bottom">
+                    <div class="footer__socials">
+                        <a class="footer__facebook" href="https://www.facebook.com/bogdan.latkovskiy.3"><img class="footer__img" src="/img/Facebook.png" alt=""></a>
+                        <a class="footer__linkedin" href="https://www.linkedin.com/in/latkovskyi-bohdan-537986112/"><img class="footer__img" src="/img/Linkedin.png" alt=""></a>
+                        <a class="footer__github" href="https://github.com/bogdanlotuk"><img class="footer__img" src="/img/Github.png" alt=""></a>
+                    </div>
+                    <div class="footer__contacts">
+                        <a class="footer__email" href="mailto:bogdanlotuk@gmail.com">Email - bogdanlotuk@gmail.com</a>
+                        <a class="footer__phone" href="tel:+380678457859">Telephone - +38 (067) 845-78-59</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
