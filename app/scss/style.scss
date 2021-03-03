@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *,
 *::after,
@@ -23,11 +24,19 @@ body {
 
 // #######HEADER###########
 .header {
+    position: relative;
     .container {
         color: #fff;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    &__video-bg {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        z-index: -5;
+        position: absolute;
     }
     &__inner {
         margin: 0 166px;
@@ -60,19 +69,21 @@ body {
     }
     &__menu-link {
         font-size: 20px;
+        font-weight: 600;
     }
     &__h1 {
         margin-bottom: 10%;
-        font-size: 64px;
+        font-size: 70px;
         line-height: 78px;
         text-align: center;
     }
 
     &__text {        
         margin-bottom: 50%;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 36px;
+        line-height: 41px;
         text-align: center;
+        font-weight: 600;
     }
 }
 
@@ -245,7 +256,7 @@ body {
         display: flex;            
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     &__socials {
         width: 200px;
@@ -269,7 +280,7 @@ body {
 }
 
 // #######################################################
-
+// MAGNIFIC-POPUP
 .image-source-link {
 	color: #98C3D1;
 }
@@ -328,3 +339,8 @@ body {
         }        
     }
 }
+
+
+
+
+
