@@ -23,9 +23,20 @@ $(document).ready(function() {
 		}
 		
 	});
-});
 
+	$('.burger').click(function() { // задаем функцию при нажатиии на элемент <button>
+		$(this).toggleClass("burger--active");
+		$('.header__navigation').toggleClass("header__navigation--active"); // удаляем, или добавляем элементу <p> два класса
+		$('.header__menu').toggleClass("header__menu--active"); 
+		$('.header__menu-link').toggleClass("header__menu-link--active");
+	});
+	
+	$('.header__menu-link').click(function() { // задаем функцию при нажатиии на элемент <button>
+		$('.burger').removeClass("burger--active");
+		$('.header__navigation').removeClass("header__navigation--active"); // удаляем, или добавляем элементу <p> два класса
+		$('.header__menu').removeClass("header__menu--active"); 
+		$('.header__menu-link').removeClass("header__menu-link--active");
+	});
+	
 
-$(document).ready(function(){
-    $("#sticker").sticky({topSpacing:0});
 });
